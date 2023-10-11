@@ -7,6 +7,7 @@ window.onload = function () {
     const tasktext = addtask.value;
     const items = document.createElement("li");
     items.innerText = tasktext;
+    items.className = "classli";
     console.log(items);
     tasklist.appendChild(items);
   };
