@@ -6,10 +6,26 @@ window.onload = function () {
   btn2.onclick = function () {
     const tasktext = addtask.value;
     const items = document.createElement("li");
-    items.innerText = tasktext;
     items.className = "classli";
+    const lispan = document.createElement("span");
+    lispan.innerText = tasktext;
+    // const newDelate = document.createElement("span");
+    // newDelate.innerText = "Delate";
+    // newDelate.className = "bye";
+
+    const btn3 = document.createElement("button");
+    btn3.className = "classbtn3";
+    btn3.innerText = "Delate";
     console.log(items);
+    // items.appendChild(newDelate);
+    items.appendChild(lispan);
+    items.appendChild(btn3);
     tasklist.appendChild(items);
+
+    btn3.onclick = function (e) {
+      const clickbtn = e.target;
+      clickbtn.parentNode.remove();
+    };
   };
-  tasklist.value = "";
+  addtask.value = "";
 };

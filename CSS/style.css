@@ -3,7 +3,7 @@ header {
 }
 header h1 {
   padding: 22px 0 17px;
-  color: #a1887b;
+  color: #c1a292;
   font-size: 3rem;
   font-family: "IBM Plex Serif", serif;
   font-weight: 600;
@@ -29,6 +29,19 @@ ul {
   height: 50px;
   border: 1px black;
   background-color: antiquewhite;
-  margin-left: 35%;
+  margin: auto;
+
   margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+#btn {
+  background-color: antiquewhite;
+  width: 88px;
+}
+#todolist {
+  width: 200px;
+}
+.classbtn3 {
+  text-align: right;
+  width: 50px;
 }
