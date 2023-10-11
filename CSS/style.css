@@ -1,0 +1,14 @@
+header {
+  text-align: center;
+  background-color: antiquewhite;
+  box-sizing: border-box;
+}
+header h1 {
+  padding: 22px 0 17px;
+}
+header nav {
+  padding: 5px 0 20px;
+}
+main {
+  background-color: rgb(192, 160, 113);
+}
