@@ -1,31 +1,14 @@
-window.onload = () => {
-  //   const button1 = function () {
-  const main = document.getElementsByTagName("main");
-  const button = document.querySelector("button");
-  const listinput = document.getElementById("todolist");
-  const listul = document.createElement("ul");
-  const contenitore = document.createElement("div");
-  console.log(listul);
+window.onload = function () {
+  const addtask = document.getElementById("todolist");
+  const btn2 = document.getElementById("btn");
+  const tasklist = document.getElementById("listul");
 
-  button.addEventListener("click", function (e) {
-    // console.log(listinput.value);
+  btn2.onclick = function () {
+    const tasktext = addtask.value;
     const items = document.createElement("li");
+    items.innerText = tasktext;
     console.log(items);
-    listul.appendChild(items);
-    console.log(items);
-  });
-  contenitore.appendChild(listul);
-  main.appendChild(contenitore);
-
-  listinput.value = "";
-  //
-
-  //   button.onclick = function () {
-  //     const items = document.createElement("li");
-  //     listul.appendChild(items);
-  //   };
-  //
-  //   console.log(listul);
-  //   body.appendChild(listul);
-  //   };
+    tasklist.appendChild(items);
+  };
+  tasklist.value = "";
 };
