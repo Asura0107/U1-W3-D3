@@ -9,6 +9,7 @@ window.onload = function () {
     items.className = "classli";
     const lispan = document.createElement("span");
     lispan.innerText = tasktext;
+    lispan.className = "lispan";
     // const newDelate = document.createElement("span");
     // newDelate.innerText = "Delate";
     // newDelate.className = "bye";
@@ -29,6 +30,6 @@ window.onload = function () {
       const clickbtn = e.target;
       clickbtn.parentNode.parentNode.remove();
     };
+    addtask.value = "";
   };
-  addtask.value = "";
 };

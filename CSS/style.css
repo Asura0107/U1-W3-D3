@@ -50,3 +50,6 @@ ul {
   padding: 5px;
   padding-right: 0;
 }
+.lispan:hover {
+  text-decoration: line-through;
+}
